@@ -1,0 +1,25 @@
+//JSX - JavaScript XML
+console.log('App.js file is running');
+
+
+//var template = <p>This is JSX from app.js!</p>;
+var template = React.createElement("p", null, "This is JSX from app.js!");
+var appRoot = document.getElementById("app");
+
+ReactDOM.render(template,appRoot);
+
+//In index.html file
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Indecision App</title>
+        </head>
+        <body>
+            <div id="app"></div>
+         <script src="https://unpkg.com/react@16.0.0/umd/react.development.js" ></script>
+         <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js" ></script>
+        <script src="/scripts/app.js"></script>
+        </body>
+    
+</html>
